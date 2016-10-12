@@ -1,0 +1,143 @@
+body{
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(to bottom, #AFAFAF, #000000 100%);
+    background-attachment: fixed;
+}
+
+.module{
+    background-image: linear-gradient(to bottom, #315481, #16DB93 170%);
+    border-radius: 10px;
+    box-shadow: 0.25em 0.25em 0.5em .1em black;
+    padding: 1%;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.header {
+    font-size: 20px;
+    min-height: 20px;
+}
+
+.title{
+    float: left;
+    position: absolute;
+}
+
+.menu-button {
+    float: right;
+    height: .95em;
+}
+.menu-button:before {
+    content: "";
+    float: right;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 1em;
+    height: 0.15em;
+    background: black;
+    box-shadow: 
+      0 0.25em 0 0 black,
+      0 0.5em 0 0 black,
+      0 0.75em 0 0 black;
+}
+.menu-button-content {
+    display: none;
+    background-color: #7a7a7a;
+    min-width: auto;
+    box-shadow: 0.25em 0.25em 0.5em .1em black;
+    border-radius: 5px;
+    padding-left: .25em;
+    padding-right: .25em;
+    z-index: 1;
+}
+.menu-button:hover .menu-button-content {
+    display: block;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #5C99E8;
+}
+
+.create-class-content{
+    display: none;
+    position: absolute;
+    width: 70%;
+    margin-left: 3%;
+    background-color: #7a7a7a;
+    box-shadow: 0.25em 0.25em 0.5em .1em black;
+    border-radius: 5px;
+    padding: 1%;
+    z-index: 1;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+
+.show-content{
+    display: block;
+}
+
+
+.class-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.class-list li:after{
+    content: "";
+    display: block;
+    height: 1px;
+    background: black;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+.dropdown-list{
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+.dropdown-list li{
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+.menu-break{
+    border-color: black;
+}
+
+button{
+    font: inherit;
+    border-radius: 5px;
+    padding: .3em;
+    animation-name: hoverShadowOut;
+    animation-duration: .5s;
+    animation-fill-mode:forwards;
+}
+
+button:hover {
+    animation-name: hoverShadow;
+    animation-duration: .5s;
+}
+
+@keyframes hoverShadow{
+    from {box-shadow:none}
+    to {box-shadow: 0.25em 0.25em 0.5em .1em black, 0 17px 50px 0 rgba(0,0,0,0.19)}
+}
+@keyframes hoverShadowOut{
+    from {box-shadow: 0.25em 0.25em 0.5em .1em black, 0 17px 50px 0 rgba(0,0,0,0.19)}
+    to {box-shadow:none}
+}
+@keyframes fadeIn{
+    from {opacity: 0}
+    to {opacity: 1}
+}

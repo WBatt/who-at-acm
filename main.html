@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<script type="text/javascript" src="main.js"> </script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="node_modules/mustache/mustache.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+	
+<body>
+	<div class = "module">
+		<div class = "header">
+			<div class = "title">
+				ACM Cougars
+			</div>
+		
+			<div class = "menu-button">
+				<div class = "menu-button-content">
+					<ul class = "dropdown-list">
+						<li>
+							<a onclick="createClass()">Create Class</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<hr class = "menu-break">
+
+		<div class = "create-class-content">
+			<div>Create A Class</div>
+			<input type="text" id="ClassName"/>
+			<input type="text" name="PassCode"/>
+			<button onclick = "createNewClass()" id = "CreateBtn">Create</button>
+			<button onclick = "closeCreateClass()" style = "float: right">Cancel</button>
+		</div>
+			
+			
+		<div id="list">
+			
+		</div>
+	</div>
+</body>
+</html>
